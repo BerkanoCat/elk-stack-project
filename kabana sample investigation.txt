@@ -1,0 +1,98 @@
+﻿- In the last 7 days, how many unique visitors were located in India?
+
+
+251
+​
+   - In the last 24 hours, of the visitors from China, how many were using Mac OSX?
+​
+8
+
+
+   - In the last 2 days, what percentage of visitors received 404 errors? How about 503 errors?
+
+
+404: 3.125%  503: 6.25%
+
+
+   - In the last 7 days, what country produced the majority of the traffic on the website?
+
+
+China
+
+
+   - Of the traffic that's coming from that country, what time of day had the highest amount of activity?
+
+
+12-14
+
+
+   - List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file type (use Google if you aren't sure about a particular file type).
+​
+Gz - a type of compression, often associated with tar balls
+Css - a web development styling document
+Zip - a compressed file or folder
+Deb - an executable installation file for debian-based linux distros
+Rpm - an executable installation file for red hat-based linux distros
+
+
+
+
+
+
+
+
+
+
+
+
+    - Locate the time frame in the last 7 days with the most amount of bytes (activity).
+    - In your own words, is there anything that seems potentially strange about this activity?
+It was one single file being downloaded by a single user
+
+
+   - What is the timestamp for this event?
+4/25/21 19:55
+    - What kind of file was downloaded?
+rpm
+    - From what country did this activity originate?
+India
+    - What HTTP response codes were encountered by this visitor?
+200
+
+
+    - What is the source IP address of this activity?
+
+
+35.143.166.159 
+
+
+    - What are the geo coordinates of this activity?
+
+
+{ "lat": 43.34121, "lon": -73.6103075 }
+
+
+    - What OS was the source machine running?
+
+
+win 8
+
+
+    - What is the full URL that was accessed?
+
+
+artifacts.elastic.co/beats/metricbeat/metricbeat-6.3.2-i686.rpm HTTP/1.1
+
+
+    - From what website did the visitor's traffic originate?
+
+
+artifacts.elastic.co
+
+
+
+
+At first glance, this would appear to be a more or less benign situation. The user was downloading the metricbeat installation files for red hat. While it could be seen as strange that they were downloading a Red Hat file onto a Windows OS, this could simply mean that they were planning on transferring the file to another system, possibly a VM. 
+
+
+The question that arises is what China has to do with the equation….artifacts.elastic.co points to a server hosted in Missouri, not China. Could an attacker in China be spoofing the elasticsearch IP to make a malware file look like a metricbeat installation file?
