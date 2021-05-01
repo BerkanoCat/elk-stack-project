@@ -92,7 +92,11 @@ artifacts.elastic.co
 
 
 
-At first glance, this would appear to be a more or less benign situation. The user was downloading the metricbeat installation files for red hat. While it could be seen as strange that they were downloading a Red Hat file onto a Windows OS, this could simply mean that they were planning on transferring the file to another system, possibly a VM. 
+At first glance, this would appear to be a more or less benign situation. 
+The user was downloading the metricbeat installation files for red hat. 
+While it could be seen as strange that they were downloading a Red Hat file onto a Windows OS, 
+this could simply mean that they were planning on transferring the file to another system, possibly a VM. 
 
 
-The question that arises is what China has to do with the equation….artifacts.elastic.co points to a server hosted in Missouri, not China. Could an attacker in China be spoofing the elasticsearch IP to make a malware file look like a metricbeat installation file?
+The question that arises is what China has to do with the equation….artifacts.elastic.co points to a server hosted in Missouri, 
+not China. Could an attacker in China be spoofing the elasticsearch IP to make a malware file look like a metricbeat installation file?
