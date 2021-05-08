@@ -70,6 +70,7 @@ The following screenshot displays the result of running `docker ps` after succes
 ![image](https://user-images.githubusercontent.com/10915508/117519231-9f073f80-af57-11eb-9559-7e92637aa0d3.png)
 
 the install-elk.yml file is included in this repo, and is reproduced below:
+
 ---
 - name: Configure Elk VM with Docker
   hosts: elk
@@ -139,6 +140,7 @@ FILEBEAT: Detects and logs any changes made to the central file system of the ma
 METRICBEAT: Detects and logs any changes made to system metrics. Useful for finding changes in CPU usage, login attempts (warranted or otherwise), RAM statistics, and more. Extremly helpful in detecting malicious behavior.
 
 The Playbook for installing Filebeat is reproduced below, as well as elsewhere in this repo. The playbook for metricbeat is nearly identical and as such will not be reproduced here, but can also be found elsewhere in this repo.
+
 ---
 - name: installing and launching filebeat
   hosts: webservers
