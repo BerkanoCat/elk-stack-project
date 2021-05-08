@@ -70,7 +70,7 @@ The following screenshot displays the result of running `docker ps` after succes
 ![image](https://user-images.githubusercontent.com/10915508/117519231-9f073f80-af57-11eb-9559-7e92637aa0d3.png)
 
 the install-elk.yml file is included in this repo, and is reproduced below:
-'''
+~~~
 ---
 - name: Configure Elk VM with Docker
   hosts: elk
@@ -128,7 +128,7 @@ the install-elk.yml file is included in this repo, and is reproduced below:
       systemd:
         name: docker
         enabled: yes
-'''
+~~~
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the three web hosts in the network, at IP addresses 10.0.0.5, 10.0.0.6, and 10.0.0.9
@@ -142,7 +142,7 @@ METRICBEAT: Detects and logs any changes made to system metrics. Useful for find
 
 The Playbook for installing Filebeat is reproduced below, as well as elsewhere in this repo. The playbook for metricbeat is nearly identical and as such will not be reproduced here, but can also be found elsewhere in this repo.
 
-'''
+~~~
 ---
 - name: installing and launching filebeat
   hosts: webservers
@@ -173,7 +173,7 @@ The Playbook for installing Filebeat is reproduced below, as well as elsewhere i
     systemd:
       name: filebeat
       enabled: yes
-'''
+~~~
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. In our case, we use docker container located on our Jump-Box-Provisioner machine as such.
